@@ -1,0 +1,251 @@
+extends layout
+
+block content
+	div(class="container")
+			ul(id="gn-menu", class="gn-menu-main")
+				li(class="gn-trigger")
+					a(class="gn-icon gn-icon-menu") 
+						span Menu
+					nav(class="gn-menu-wrapper")
+						div(class="gn-scroller")
+							ul(class="gn-menu")
+								li(class="gn-search-item")
+									input(placeholder="Search", type="search", class="gn-search")
+									a(class="gn-icon gn-icon-search")
+										span Search
+								li
+									a(href="#about", class="gn-icon gn-icon-download") About
+								li
+									a(href="#service", class="gn-icon gn-icon-cog") Service
+								li
+									a(href="#works" class="gn-icon gn-icon-help") Works			
+								li
+									a(href="#contact" class="gn-icon gn-icon-archive") Contact 
+				li  
+					a(href="index.html") NINESTARS
+				li
+					ul(class="company-social")
+						li(class="social-facebook")
+							a(href="#" target="_blank") <i class="fa fa-facebook"></i>
+						li(class="social-twitter")
+							a(href="#" target="_blank") <i class="fa fa-twitter"></i>
+						li(class="social-dribble")
+							a(href="#" target="_blank") <i class="fa fa-dribbble"></i>
+						li(class="social-google")
+							a(href="#" target="_blank") <i class="fa fa-google-plus"></i>
+
+	<!-- Section: intro -->
+	section(id="intro", class="intro")
+		div(class="slogan")
+			h1 This is Ninestars
+			p make awesome stuff with Bootstrap framework
+			a(href="#about" class="btn btn-skin scroll") Learn more
+
+	<!-- Section: about -->
+	section(id="about", class="home-section text-center bg-gray")
+		div(class="heading-about marginbot-50")
+			div(class="container")
+				div(class="row")
+					div(class="col-lg-8 col-lg-offset-2")
+			
+						div(class="section-heading")
+							h2 About us
+							p Lorem ipsum dolor sit amet, no nisl mentitum recusabo per, vim at blandit qualisque dissentiunt. Diam efficiantur conclusionemque ut has
+
+		div(class="container")
+
+			div(class="row")
+				div(class="col-xs-6 col-sm-3 col-md-3")
+
+					div(class="team boxed-grey")
+						div(class="inner")
+							h5 Anna Hanaceck
+							p(class="subtitle") Pixel Crafter
+							div(class="avatar") 
+								img(src="img/team/1.jpg", alt="", class="img-responsive")
+
+				div(class="col-xs-6 col-sm-3 col-md-3")
+
+					div(class="team boxed-grey")
+						div(class="inner")
+							h5 Maura Daniels
+							p(class="subtitle") Ruby on Rails
+							div(class="avatar")
+								img(src="img/team/2.jpg", alt="", class="img-responsive")
+
+				div(class="col-xs-6 col-sm-3 col-md-3")
+			
+					div(class="team boxed-grey")
+						div(class="inner")
+							h5 Jack Briane
+							p(class="subtitle") jQuery Ninja
+							div(class="avatar")
+								img(src="img/team/3.jpg", alt="", class="img-responsive")
+
+				div(class="col-xs-6 col-sm-3 col-md-3")
+			
+					div(class="team boxed-grey")
+						div(class="inner")
+							h5 Tom Petterson
+							p(class="subtitle") Typographer
+							div(class="avatar")
+								img(src="img/team/4.jpg", alt="", class="img-responsive")
+	<!-- Section: services -->
+	section(id="service", class="home-section text-center")
+		
+		div(class="heading-about marginbot-50")
+			div(class="container")
+				div(class="row")
+					div(class="col-lg-8 col-lg-offset-2")
+			
+						div(class="section-heading")
+							h2 Our Services
+							p Lorem ipsum dolor sit amet, no nisl mentitum recusabo per, vim at blandit qualisque dissentiunt. Diam efficiantur conclusionemque ut has
+
+		div(class="container")
+			div(class="row")
+				div(class="col-sm-3 col-md-3")
+				
+					div(class="service-box")
+						div(class="service-icon")
+							<i class="fa fa-code fa-3x"></i>
+						div(class="service-desc")
+							h5 Print
+							p Vestibulum tincidunt enim in pharetra malesuada. Duis semper magna metus electram accommodare.
+
+				div(class="col-sm-3 col-md-3")
+		
+					div(class="service-box")
+						div(class="service-icon")
+							<i class="fa fa-suitcase fa-3x"></i>
+						div(class="service-desc")
+							h5 Web Design
+							p Vestibulum tincidunt enim in pharetra malesuada. Duis semper magna metus electram accommodare.
+
+				div(class="col-sm-3 col-md-3")
+
+					div(class="service-box")
+						div(class="service-icon")
+							<i class="fa fa-cog fa-3x"></i>
+						div(class="service-desc")
+							h5 Photography
+							p Vestibulum tincidunt enim in pharetra malesuada. Duis semper magna metus electram accommodare.
+
+				div(class="col-sm-3 col-md-3")
+		
+					div(class="service-box")
+						div(class="service-icon")
+							<i class="fa fa-rocket fa-3x"></i>
+						div(class="service-desc")
+							h5 Cloud System
+							p Vestibulum tincidunt enim in pharetra malesuada. Duis semper magna metus electram accommodare.
+
+	<!-- Section: works -->
+	section(id="works" class="home-section text-center bg-gray")
+		div(class="heading-works marginbot-50")
+			div(class="container")
+				div(class="row")
+					div(class="col-lg-8 col-lg-offset-2")
+			
+						div(class="section-heading")
+							h2 Recent Works
+							p Lorem ipsum dolor sit amet, no nisl mentitum recusabo per, vim at blandit qualisque dissentiunt. Diam efficiantur conclusionemque ut has 
+
+		div(class="container")
+
+			div(class="row")
+				div(class="col-sm-12 col-md-12 col-lg-12")
+
+					div(class="row gallery-item")
+						div(class="col-md-3")
+							a(href="img/works/1.jpg", title="This is an image title", data-lightbox-gallery="gallery1", data-lightbox-hidpi="img/works/1@2x.jpg")
+								img(src="img/works/1.jpg", class="img-responsive", alt="img")
+
+						div(class="col-md-3")
+							a(href="img/works/2.jpg", title="This is an image title", data-lightbox-gallery="gallery1", data-lightbox-hidpi="img/works/1@2x.jpg")
+								img(src="img/works/2.jpg", class="img-responsive", alt="img")
+						div(class="col-md-3")
+							a(href="img/works/3.jpg", title="This is an image title", data-lightbox-gallery="gallery1", data-lightbox-hidpi="img/works/1@2x.jpg")
+								img(src="img/works/3.jpg", class="img-responsive", alt="img")
+						div(class="col-md-3")
+							a(href="img/works/4.jpg" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg")
+								img(src="img/works/4.jpg" class="img-responsive" alt="img")
+						div(class="col-md-3")
+							a(href="img/works/5.jpg" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg")
+								img(src="img/works/5.jpg" class="img-responsive" alt="img")
+						div(class="col-md-3")
+							a(href="img/works/6.jpg" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg")
+								img(src="img/works/6.jpg" class="img-responsive" alt="img")
+						div(class="col-md-3")
+							a(href="img/works/7.jpg" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg")
+								img(src="img/works/7.jpg" class="img-responsive" alt="img")
+						div(class="col-md-3")
+							a(href="img/works/8.jpg" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg")
+								img(src="img/works/8.jpg" class="img-responsive" alt="img")
+
+
+	<!-- Section: contact -->
+	section(id="contact", class="home-section text-center")
+		div(class="heading-contact marginbot-50")
+			div(class="container")
+				div(class="row")
+					div(class="col-lg-8 col-lg-offset-2")
+		
+						div(class="section-heading")
+							h2 Get in touch
+							p Lorem ipsum dolor sit amet, no nisl mentitum recusabo per, vim at blandit qualisque dissentiunt. Diam efficiantur conclusionemque ut has
+		div(class="container")
+
+			div(class="row")
+				div(class="col-lg-8 col-md-offset-2")
+					div(class="boxed-grey")
+						form(id="contact-form")
+							div(class="row")
+								div(class="col-md-6")
+									div(class="form-group")
+										label(for="name")
+											| Name 
+										input(type="text", class="form-control", id="name", placeholder="Enter name", required="required")
+									div(class="form-group")
+										label(for="email")
+											| Email Address
+										div(class="input-group")
+											span(class="input-group-addon") <span class="glyphicon glyphicon-envelope"></span>
+											input(type="email" class="form-control" id="email" placeholder="Enter email" required="required")
+									div(class="form-group")
+										label(for="subject")
+											| Subject
+										select(id="subject" name="subject" class="form-control" required="required")
+											option(value="na" selected="") Choose One:
+											option(value="service") General Customer Service
+											option(value="suggestions") Suggestions
+											option(value="product") Product Support
+								div(class="col-md-6")
+									div(class="form-group")
+										label(for="name")
+											| Message
+										textarea(name="message" id="message" class="form-control" rows="9" cols="25" required="required"
+											placeholder="Message")
+								div(class="col-md-12")
+									button(type="submit" class="btn btn-skin pull-right" id="btnContactUs") Send Message
+						
+					div(class="widget-contact row")
+						div(class="col-lg-6")
+							address
+								strong Ninestars Ltd.<br>
+								| Big Villa 334 Awesome, Beautiful Suite 1200 <br>
+								| San Francisco, CA 94107<br>
+								abbr(title="Phone") P:
+								| (123) 456-7890
+
+						div(class="col-lg-6")
+							address
+								strong Email <br />
+								a(href="mailto:#") email.name@example.com <br />
+								a(href="mailto:#") name.name@example.com
+
+	footer
+		div(class="container")
+			div(class="row")
+				div(class="col-md-12 col-lg-12")		
+					p Copyright &copy; 2014 Ninestars - by <a href="http://bootstraptaste.com">Bootstraptaste</a>
